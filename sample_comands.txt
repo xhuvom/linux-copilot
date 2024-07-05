@@ -1,0 +1,17 @@
+list nested subfolders and files in this directory and show by their sizes
+
+search for the string "mistral" within all files in the examples directory
+
+copy the file ngc-docker-TLT3 to my remote server root@103.188.235.45 at port 23 to be saved to ~/Downloads directory 
+
+show available disk usages on my system
+
+allow port 8849 
+
+show current system cpu, ram and gpu usage on my system
+
+search and securely delete the file nid_image_b64.json from my system
+
+Display network interfaces and their configurations on my system 
+
+find my current attive nwtwork interface and show my current active ethernet network speed 

@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "ollama"
+version = "0.0.0"
+description = "The official Python client for Ollama."
+authors = ["Ollama <hello@ollama.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://ollama.ai"
+repository = "https://github.com/jmorganca/ollama-python"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "^0.27.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.4.3,<9.0.0"
+pytest-asyncio = "^0.23.2"
+pytest-cov = ">=4.1,<6.0"
+pytest-httpserver = "^1.0.8"
+pillow = "^10.2.0"
+ruff = ">=0.1.8,<0.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 999
+indent-width = 2
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+
+[tool.ruff.lint]
+select = ["E", "F", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+addopts = '--doctest-modules --ignore examples'
